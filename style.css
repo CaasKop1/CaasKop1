@@ -1,49 +1,148 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
-    border-radius: 15px;
-    font-family: arial;
-    font-weight: bold;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #df8f0f;
-    color: white;
-  }
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 15px;
+  font-family: arial;
+  font-weight: bold;
+  transition: margin-right 0.3s
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #df8f0f;
+  color: white;
+}
+
+.topnav.open {
+  margin-right: 250px; /* Adjust the value based on your sidebar width */
+}
 
 
 
-  body {
-    background-image: url('resources/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: arial;
-  }
-  
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:#df8f0f;
-    color: white;
-    text-align: center;
-  }
+/* Add styles for the menu toggle button */
+.menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  color: white;
+  z-index: 3;
+}
+
+/* Style the off-canvas sidebar */
+#sidebar {
+  position: fixed;
+  top: 8px;
+  right: -250px; /* Change left to right */
+  width: 250px;
+  height: 90%;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 1;
+  border-radius: 15px;
+}
+
+#sidebar a:hover {
+  background-color: #df8f0f;
+  padding: 14px 16px;
+}
+
+#sidebar.open {
+  right: 0; /* Change this to 0 for open state */
+  z-index: 2;
+}
+
+/* Style the off-canvas menu content */
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#sidebar ul li {
+  padding: 15px;
+}
+
+#sidebar ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#sidebar.open + .topnav {
+  margin-right: 250px; /* Adjust the value based on your sidebar width */
+}
+
+/* Styles for the open state of the off-canvas menu */
+#sidebar.open + main {
+  margin-right: 250px; /* Adjust the value based on your sidebar width */
+}
+
+/* Style the active/current link in the off-canvas menu */
+#sidebar a.active {
+  background-color: #df8f0f;
+  color: white;
+}
+
+/* Style the close button (X) in the open state */
+#sidebar.open .menu-toggle {
+  color: white;
+}
+
+
+
+body {
+  background-image: url('resources/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: arial;
+}
+
+main {
+  position: absolute;
+  padding-left: 0.4%;
+  margin-right: 0; /* Set initial margin-right to 0 */
+  transition: margin-right 0.3s; /* Add transition for smooth animation */
+}
+
+main.open {
+  margin-right: 250px; /* Adjust the value based on your sidebar width */
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  height: 8%;
+  bottom: 0;
+  width: 100%;
+  background-color:#df8f0f;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  text-size-adjust: 0;
+  transition: margin-right 0.3s;
+}
+
+.footer.open {
+  margin-right: 250px; /* Adjust the value based on your sidebar width */
+}
