@@ -54,7 +54,7 @@
   top: 8px;
   right: -250px; /* Change left to right */
   width: 250px;
-  height: 90%;
+  height: 86%;
   background-color: #333;
   overflow-x: hidden;
   transition: 0.3s;
@@ -115,6 +115,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: arial;
+  min-height: 100vh;
 }
 
 main {
