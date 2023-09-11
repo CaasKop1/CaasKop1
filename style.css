@@ -114,6 +114,8 @@ main.open {
 
 
 body {
+  display: flex;
+  flex-direction: column;
   background-image: url('resources/background.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -122,7 +124,7 @@ body {
 }
 
 main {
-  position: absolute;
+  flex: 1;
   padding-left: 0.4%;
   margin-right: 0; /* Set initial margin-right to 0 */
   transition: margin-right 0.3s; /* Add transition for smooth animation */
@@ -130,4 +132,11 @@ main {
 
 main.open {
   margin-right: 250px; /* Adjust the value based on your sidebar width */
+}
+
+footer {
+  background-color:#df8f0f;
+  position: sticky;
+  text-align: center;
+  color: white;
 }
