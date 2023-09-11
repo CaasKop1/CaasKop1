@@ -3,7 +3,6 @@
   background-color: #333;
   overflow: hidden;
   border-radius: 15px;
-  font-family: arial;
   font-weight: bold;
   transition: margin-right 0.3s
 }
@@ -106,6 +105,10 @@
 /* Style the close button (X) in the open state */
 #sidebar.open .menu-toggle {
   color: white;
+}
+
+main.open {
+  margin-right: 250px; /* Adjust the value based on your sidebar width */
 }
 
 
