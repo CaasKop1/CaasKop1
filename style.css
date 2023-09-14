@@ -30,12 +30,11 @@
 }
 
 .topnav.open {
-  margin-right: 250px; /* Adjust the value based on your sidebar width */
+  margin-right: 250px; /* Adjust the value based on the sidebar width */
 }
 
 
 
-/* Add styles for the menu toggle button */
 .menu-toggle {
   position: absolute;
   top: 0;
@@ -51,7 +50,7 @@
 #sidebar {
   position: fixed;
   top: 8px;
-  right: -250px; /* Change left to right */
+  right: -250px; /*-250 for closed state*/
   width: 250px;
   height: 86%;
   background-color: #333;
@@ -67,7 +66,7 @@
 }
 
 #sidebar.open {
-  right: 0; /* Change this to 0 for open state */
+  right: 0; /*0 for open state*/
   z-index: 2;
 }
 
@@ -88,15 +87,14 @@
 }
 
 #sidebar.open + .topnav {
-  margin-right: 250px; /* Adjust the value based on your sidebar width */
+  margin-right: 250px; /* Adjust the value based on sidebar width */
 }
 
-/* Styles for the open state of the off-canvas menu */
 #sidebar.open + main {
-  margin-right: 250px; /* Adjust the value based on your sidebar width */
+  margin-right: 250px; /* Adjust the value based on sidebar width */
 }
 
-/* Style the active/current link in the off-canvas menu */
+/* Style the active link in the off-canvas menu */
 #sidebar a.active {
   background-color: #df8f0f;
   color: white;
@@ -122,12 +120,12 @@ body {
 main {
   flex: 1;
   padding-left: 0.4%;
-  margin-right: 0; /* Set initial margin-right to 0 */
-  transition: margin-right 0.3s; /* Add transition for smooth animation */
+  margin-right: 0; /* For closed sidebar */
+  transition: margin-right 0.3s; /* Transition length for smooth animation */
 }
 
 main.open {
-  margin-right: 250px; /* Adjust the value based on your sidebar width */
+  margin-right: 250px; /* Adjust the value based on sidebar width */
 }
 
 footer {
