@@ -36,9 +36,9 @@
 
 
 .menu-toggle {
-  position: absolute;
+  position: sticky;
   top: 0;
-  right: 0;
+  left: 100%;
   cursor: pointer;
   padding: 14px 16px;
   font-size: 20px;
