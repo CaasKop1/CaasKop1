@@ -105,6 +105,24 @@
   color: white;
 }
 
+.sidebar-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 6px;
+  background-color: #333;
+  border-top: 1px solid #555;
+}
+
+/* Style the #hzlogo image inside the bottom section */
+.sidebar-bottom #hzlogo {
+  width: 70%; /* Adjust the width as needed */
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
 
 
 body {
