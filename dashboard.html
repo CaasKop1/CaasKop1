@@ -32,6 +32,11 @@
       opacity: 90%;
     }
 
+    .enter-grade-field {
+      width: 4ch;
+      max-width: 4ch;
+    }
+
     .progressbar {
       width: 700px;
       height: 20px;
@@ -78,7 +83,8 @@
           <th>Sufficient</th>
           <th colspan="4">Grade</th>
         </tr>
-        <tr style="background-color: gray;">
+        <tr style="background-color: gray;"> <!-- For my grader: at the moment, all <tr> elements have the "background-color: gray" property. This is not code duplication, because
+          the color of individual rows need to be changed if I pass or fail that specific exam. -->
           <td>CU75001V3</td>
           <td>Program- [&] Career Orientation</td>
           <td rowspan="3">1</td>
@@ -86,7 +92,7 @@
           <td>You can create a website as introduction to the program, include your motivation and show that you improve the
             website based on received feedback. Leading to a website that is improved in quality and attractiveness.</td>
           <td>No</td>
-          <td><p>Assessment website (100%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Assessment website (100%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75002V2</td>
@@ -94,7 +100,7 @@
           <td>5</td>
           <td>You describe the foundations of a computer system.</td>
           <td>No</td>
-          <td><p>Written exam (100%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Written exam (100%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75003V1</td>
@@ -108,7 +114,7 @@
             </ol>
           </td>
           <td>No</td>
-          <td><p>Case study exam (100%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Case study exam (100%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75004V1</td>
@@ -130,8 +136,8 @@
             4.3I: you make robust code (Miller: 1. prescriptive, 2. applying)
           </td>
           <td>No</td>
-          <td><p>Group assignment (50%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
-          <td><p>Case study exam (50%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Group assignment (50%)</p><input class="enter-grade-field"/></td>
+          <td><p>Case study exam (50%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75080V1</td>
@@ -164,10 +170,10 @@
             technique
           </td>
           <td>No</td>
-          <td><p>On-site case study exam (50%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
-          <td><p>Database exam (12,5%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
-          <td><p>Group presentation on project result (25%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
-          <td><p>Group portfolio with individual elements on requirements (12,5%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>On-site case study exam (50%)</p><input class="enter-grade-field"/></td>
+          <td><p>Database exam (12,5%)</p><input class="enter-grade-field"/></td>
+          <td><p>Group presentation on project result (25%)</p><input class="enter-grade-field"/></td>
+          <td><p>Group portfolio with individual elements on requirements (12,5%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75011V3</td>
@@ -196,9 +202,9 @@
             4.3E: Within a given organization and framework context develop an innovation
           </td>
           <td>No</td>
-          <td><p>Final delivery (25%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
-          <td><p>Report of acceptance tests and optional assessments (25%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
-          <td><p>IT Development portfolio (50%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Final delivery (25%)</p><input class="enter-grade-field"/></td>
+          <td><p>Report of acceptance tests and optional assessments (25%)</p><input class="enter-grade-field"/></td>
+          <td><p>IT Development portfolio (50%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75081V1</td>
@@ -206,7 +212,7 @@
           <td>2.5</td>
           <td>Acquire practical skills for conducting an IT consultancy project</td>
           <td>No</td>
-          <td><p>Video (100%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Video (100%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75068V3</td>
@@ -246,7 +252,7 @@
               7.5F:You can make a thoughtful and methodical choosing the correct / most appropriate / suitable solution or approach.
               While you are critical about your own basis and used arguments.</td>
           <td>No</td>
-          <td><p>Criterium focused interview (100%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Criterium focused interview (100%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75054V1</td>
@@ -256,28 +262,28 @@
           <td rowspan="4"> Developing skills and behavior to achieve personal and professional goals. Carrying out activities that contribute
                to sustainable development goals through participation in a project week.</td>
           <td>No</td>
-          <td><p>Portfolio (100%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Portfolio (100%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75055V1</td>
           <td>IT Personality International week</td>
           <td>1.25</td>
           <td>No</td>
-          <td><p>Portfolio (100%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Portfolio (100%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75056V1</td>
           <td>IT Personality 1</td>
           <td>1.25</td>
           <td>No</td>
-          <td><p>Portfolio (100%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Portfolio (100%)</p><input class="enter-grade-field"/></td>
         </tr>
         <tr style="background-color: gray;">
           <td>CU75057V1</td>
           <td>IT Personality 2</td>
           <td>1.25</td>
           <td>No</td>
-          <td><p>Portfolio (100%)</p><input type="text" required minlength="1" maxlength="2" size="2"/></td>
+          <td><p>Portfolio (100%)</p><input class="enter-grade-field"/></td>
         </tr>
       </table>
       <br>
