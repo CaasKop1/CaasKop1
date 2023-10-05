@@ -64,7 +64,7 @@
 }
 
 #sidebar.open {
-  right: 0; /* 0 for open state */
+  right: 0;
   z-index: 2;
 }
 
