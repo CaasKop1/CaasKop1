@@ -139,7 +139,7 @@ main.open {
   margin-right: 250px; /* Adjust the value based on sidebar width */
 }
 
-p, table, h1, h2, li {
+p, h1, h2, li {
   color: black;
 }
 
@@ -147,5 +147,8 @@ footer {
   background-color:#df8f0f;
   position: sticky;
   text-align: center;
+}
+
+footer p {
   color: white;
 }
