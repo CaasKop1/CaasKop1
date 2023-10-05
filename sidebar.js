@@ -10,4 +10,3 @@ document.addEventListener('DOMContentLoaded', function() {
       main.classList.toggle('open');
     });
   });
-  
